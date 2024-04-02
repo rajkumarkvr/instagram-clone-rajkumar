@@ -6,6 +6,9 @@
   box-sizing: border-box;
   font-family: sans-serif;
 }
+html {
+  color-scheme: light;
+}
 
 body {
   min-height: 100dvh;
@@ -19,6 +22,76 @@ body {
   flex-direction: column;
   gap: 0.6rem;
   width: 350px;
+}
+.devname {
+  font-size: 16px;
+}
+.devname span {
+  background: linear-gradient(lightgreen 50%, blue) 50%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: change 1s linear infinite;
+}
+@keyframes change {
+  0% {
+    background: linear-gradient(lightgreen 10%, blue 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  50% {
+    background: linear-gradient(lightgreen 50%, blue 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  50% {
+    background: linear-gradient(lightgreen 10%, blue 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+@-moz-keyframes change {
+  0% {
+    background: linear-gradient(lightgreen 10%, blue 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  50% {
+    background: linear-gradient(lightgreen 50%, blue 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  50% {
+    background: linear-gradient(lightgreen 10%, blue 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+@-webkit-keyframes change {
+  0% {
+    background: linear-gradient(lightgreen 10%, blue 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  50% {
+    background: linear-gradient(lightgreen 50%, blue 80%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  50% {
+    background: linear-gradient(lightgreen 10%, blue 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
 }
 .login {
   border: 1px solid #bbb;
@@ -135,7 +208,6 @@ body {
 .footer-items {
   display: flex;
   gap: 1rem;
- 
 }
 .meta {
   margin-bottom: 1rem;
