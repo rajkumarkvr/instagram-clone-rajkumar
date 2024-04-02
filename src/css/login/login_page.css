@@ -135,7 +135,7 @@ body {
 .footer-items {
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap;
+ 
 }
 .meta {
   margin-bottom: 1rem;
